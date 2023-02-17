@@ -1,0 +1,22 @@
+{
+    "manifest_version" : 2,
+    "name": "SpanishInquisition",
+    "description": "Nobody expects the Spanish Inquisition! - By Idan Svirsky",
+    "version": "1.0",
+    "icons": {
+        "16": "./images/icon16.png",
+        "48": "./images/icon48.png",
+        "128": "./images/icon128.png"
+    },
+    "page_action": {
+        "default_icon": {
+            "16": "./images/icon16-2.png",
+            "48": "./images/icon48-2.png",
+            "128": "./images/icon128-2.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }]
+}
